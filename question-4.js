@@ -1,7 +1,12 @@
 // Question 4: Shipping Cost Calculator
 
-function calculateShippingCost() {
+function calculateShippingCost(quantity) {
   // เริ่มเขียนโค้ดที่นี่
+    if(quantity > 4000){
+      return 'Shipping is free';
+    }else if(quantity > 2000){
+      return 'Shipping cost is 250 Bath.';
+    }else  return 'Shipping cost is 500 Bath.';
 }
 
 // ตัวอย่างการใช้งาน
